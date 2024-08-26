@@ -480,6 +480,7 @@ STATUS initializePeerConnection(PSampleConfiguration pSampleConfiguration, PRtcP
 
                 uriCount++;
             }
+            CHK_STATUS(addConfigToServerList(ppRtcPeerConnection, pIceConfigInfo));
         }
     }
 
